@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SystemPolo - Pack 30 Videos IA para Partners Immunotec</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        snaptube: {
+                            yellow: '#FFCC00',
+                            yellowHover: '#E6B800',
+                            red: '#FF1E27',
+                            darkBg: '#0D0E12',
+                            cardBg: '#15171E',
+                            border: '#2A2D37'
+                        }
+                    },
+                    fontFamily: {
+                        impact: ['Montserrat', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0D0E12;
+            color: #FFFFFF;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Snaptube Magnetic Yellow Button Effect */
+        .btn-snaptube {
+            background-color: #FFCC00;
+            color: #000000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 20px rgba(255, 204, 0, 0.35);
+        }
+        .btn-snaptube:hover {
+            background-color: #ffe066;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 204, 0, 0.55);
+        }
+
+        /* Red Accent Badge like the image */
+        .badge-new {
+            background-color: #FF1E27;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        /* Red Box Highlight for Keywords in Cards */
+        .highlight-box-red {
+            background-color: #FF1E27;
+            color: #FFFFFF;
+            padding: 1px 6px;
+            font-weight: 800;
+            display: inline-block;
+        }
+
+        /* Card Aspect Ratio */
+        .aspect-reel {
+            aspect-ratio: 9 / 16;
+        }
+
+        /* Ambient Glow Backgrounds */
+        .ambient-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(160px);
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .glow-yellow { top: -100px; right: -100px; background: #FFCC00; }
+        .glow-red { bottom: 10%; left: -100px; background: #FF1E27; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D0E12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A2D37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFCC00;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative pb-28">
+
+    <!-- Ambient Glows -->
+    <div class="ambient-glow glow-yellow"></div>
+    <div class="ambient-glow glow-red"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-snaptube-darkBg/95 backdrop-blur-md border-b border-snaptube-border px-4 lg:px-8 py-3.5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-snaptube-yellow flex items-center justify-center text-black font-black text-xl shadow-lg shadow-yellow-500/30">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div>
+                    <h1 class="font-impact font-black text-xl sm:text-2xl tracking-tight text-white">
+                        SYSTEMPOLO<span class="text-snaptube-yellow">.AI</span>
+                    </h1>
+                    <span class="text-[10px] tracking-widest text-slate-400 uppercase font-bold block -mt-1">AI Video Marketing for Immunotec</span>
+                </div>
+            </div>
+
+            <!-- Partner Badge -->
+            <div class="hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700">
+                <span class="w-2.5 h-2.5 rounded-full bg-snaptube-yellow animate-ping"></span>
+                <span class="text-xs font-extrabold text-slate-200">Exclusivo Partners Immunotec</span>
+            </div>
+
+            <!-- CTA Snaptube Button Header -->
+            <a href="https://wa.me/522214282564?text=Hola%20SystemPolo,%20quiero%20reservar%20mi%20Pack%20de%2030%20Videos%20de%20IA%20con%20Funnel" 
+               target="_blank" 
+               class="btn-snaptube px-4 py-2.5 rounded-xl text-xs sm:text-sm uppercase tracking-wide flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg text-black"></i>
+                <span class="hidden xs:inline">APARTAR PACK $1,500</span>
+                <span class="xs:hidden">APARTAR</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 space-y-10 relative z-10">
+
+        <!-- HERO SECTION -->
+        <section class="bg-snaptube-cardBg rounded-3xl p-6 sm:p-10 border border-snaptube-border relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-snaptube-red text-white text-xs font-black tracking-wider uppercase">
+                        <i class="fa-solid fa-fire"></i> PREVENTA EXCLUSIVA 20 SOCIOS
+                    </div>
+
+                    <h2 class="font-impact font-black text-3xl sm:text-5xl text-white leading-tight uppercase">
+                        Gana Clientes con <span class="text-snaptube-yellow">30 Videos de IA</span> + Funnel de Regalo
+                    </h2>
+
+                    <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                        Miniaturas de alto impacto y videos de 1 minuto listos para **Reels de Instagram, Facebook y WhatsApp**. Ataca los puntos de dolor clave de tus prospectos. Solo cambiamos tu <strong class="text-snaptube-yellow">Nombre y Teléfono</strong> en la plantilla.
+                    </p>
+
+                    <!-- Offer Boxes -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <!-- Pack Offer -->
+                        <div class="p-4 rounded-2xl bg-black/60 border-2 border-snaptube-yellow relative">
+                            <span class="absolute top-2 right-2 badge-new text-[10px] px-2 py-0.5 rounded">OFERTA STAR</span>
+                            <div class="text-xs text-snaptube-yellow font-black uppercase">PAQUETE COMPLETO (30 REELS)</div>
+                            <div class="text-3xl font-black font-impact text-white my-1">$1,500 <span class="text-xs text-slate-400 font-normal">MXN</span></div>
+                            <div class="text-xs text-emerald-400 font-bold flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check"></i> Funnel Web Gratuitas ($2,000 MXN)
+                            </div>
+                            <div class="text-[11px] text-slate-400 mt-1">Solo $50 MXN por video personalizado</div>
+                        </div>
+
+                        <!-- Individual Offer -->
+                        <div class="p-4 rounded-2xl bg-black/40 border border-slate-800">
+                            <div class="text-xs text-slate-400 font-bold uppercase">VENTA INDIVIDUAL</div>
+                            <div class="text-3xl font-black font-impact text-slate-200 my-1">$150 <span class="text-xs text-slate-400 font-normal">MXN / video</span></div>
+                            <div class="text-xs text-slate-300">Selecciona los temas que desees.</div>
+                            <div class="text-[11px] text-slate-400 mt-1">Soporte directo por WhatsApp</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
+                        <a href="https://wa.me/522214282564?text=Hola%20SystemPolo,%20quiero%20reservar%20mi%20Pack%20de%2030%20Videos%20de%20IA%20con%20Funnel%20de%20Regalo" 
+                           target="_blank" 
+                           class="btn-snaptube px-8 py-4 rounded-2xl text-sm tracking-wider uppercase flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl text-black"></i>
+                            PEDIR PACK COMPLETO $1,500 MXN
+                        </a>
+
+                        <a href="#catalogo" 
+                           class="px-6 py-4 rounded-2xl bg-slate-900 border border-slate-700 text-slate-200 font-bold text-sm hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-list"></i>
+                            VER 30 TEMAS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Thumbnail Sample (Thumbnail Style matching image) -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center">
+                    <div class="relative w-full max-w-xs aspect-reel rounded-2xl overflow-hidden border-2 border-snaptube-yellow shadow-2xl bg-slate-950 group">
+                        
+                        <!-- Image Face Background -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+                             alt="Sample Thumbnail" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80">
+                        
+                        <!-- Dark Overlay gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+
+                        <!-- Top Red Badge "NEW" (Exact as image) -->
+                        <div class="absolute top-3 left-0 badge-new px-3 py-1 rounded-r-md text-xs font-black shadow-lg tracking-wider">
+                            NEW
+                        </div>
+
+                        <!-- Center Play Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 rounded-full bg-snaptube-yellow text-black flex items-center justify-center text-xl font-black shadow-xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                        </div>
+
+                        <!-- Text Overlay on Thumbnail (Matching prompt style: Big text + Red Highlight Box) -->
+                        <div class="absolute bottom-12 left-3 right-3 text-left space-y-1">
+                            <div class="font-impact text-lg font-black leading-tight text-white uppercase drop-shadow-md">
+                                Immunocal <span class="highlight-box-red">SÍ FUNCIONA</span> Para
+                            </div>
+                            <div class="font-impact text-xl font-black text-snaptube-yellow uppercase drop-shadow-md">
+                                LA FATIGA CRÓNICA
+                            </div>
+                        </div>
+
+                        <!-- Bottom Footer on Card -->
+                        <div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] text-slate-300 font-bold">
+                            <span class="bg-black/80 px-2 py-0.5 rounded text-snaptube-yellow border border-snaptube-yellow/30">SYSTEMPOLO AI</span>
+                            <span class="bg-black/80 px-2 py-0.5 rounded text-white">0:59</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATALOG SECTION -->
+        <section id="catalogo" class="space-y-6 pt-4">
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h2 class="font-impact font-black text-2xl lg:text-3xl text-white uppercase tracking-tight flex items-center gap-3">
+                        <i class="fa-solid fa-film text-snaptube-yellow"></i> Catálogo de 30 Videos
+                    </h2>
+                    <p class="text-slate-400 text-xs sm:text-sm">Elige tus contenidos individuales o compra el paquete completo de preventa.</p>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative min-w-[280px]">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" 
+                           id="searchInput" 
+                           placeholder="Buscar síntoma o tema (ej. Autismo, Diabetes)..." 
+                           class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-snaptube-yellow transition-all">
+                </div>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="categoryFilters">
+                <button data-category="all" class="filter-btn active px-4 py-2 rounded-xl bg-snaptube-yellow text-black font-extrabold text-xs whitespace-nowrap shadow-md">
+                    Todos (30)
+                </button>
+                <button data-category="glutacion" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Glutatión & Vitalidad
+                </button>
+                <button data-category="cerebral" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Salud Cognitiva
+                </button>
+                <button data-category="digestivo" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Digestivo & Microbioma
+                </button>
+                <button data-category="rendimiento" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Rendimiento & Peso
+                </button>
+                <button data-category="estilo" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Estilo de Vida
+                </button>
+                <button data-category="negocio" class="filter-btn px-4 py-2 rounded-xl bg-snaptube-cardBg border border-snaptube-border text-slate-300 font-bold text-xs whitespace-nowrap hover:border-snaptube-yellow transition-all">
+                    Red & Negocio
+                </button>
+            </div>
+
+            <!-- VIDEO GRID -->
+            <div id="videoGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-5">
+                <!-- Loaded via JS -->
+            </div>
+        </section>
+
+        <!-- DIRECTORY SECTION -->
+        <section class="bg-snaptube-cardBg rounded-3xl p-6 sm:p-8 border border-snaptube-border space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                    <h3 class="font-impact font-black text-xl text-white uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-snaptube-yellow"></i> Directorio Completo de los 30 Temas
+                    </h3>
+                    <p class="text-xs text-slate-400">Temario organizado por puntos de dolor estratégicos para distribuidores Immunotec.</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-snaptube-yellow text-xs font-mono font-bold">30 / 30 Temas Listos</span>
+            </div>
+
+            <div id="directoryContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Loaded via JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-16 border-t border-slate-800 bg-black/80 py-8 px-4 text-center relative z-10">
+        <div class="max-w-7xl mx-auto space-y-3">
+            <div class="font-impact font-black text-lg text-snaptube-yellow tracking-wider">SYSTEMPOLO.AI</div>
+            <p class="text-xs text-slate-400">Sistema de producción y comercialización de videos de Inteligencia Artificial para la Red Immunotec.</p>
+            <div class="text-[10px] text-slate-600">© 2026 SystemPolo Labs. WhatsApp: +52 221 428 2564</div>
+        </div>
+    </footer>
+
+    <!-- STICKY FLOATING WHATSAPP BAR (MOBILE OPTIMIZED SNAP TUBE YELLOW) -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-black/95 border-t border-snaptube-border shadow-2xl flex items-center justify-between gap-3 px-4">
+        <div class="hidden xs:block">
+            <div class="text-[10px] text-slate-400 uppercase font-bold">PREVENTA SYSTEMPOLO</div>
+            <div class="text-xs font-impact font-black text-snaptube-yellow">30 VIDEOS IA + FUNNEL ($1,500 MXN)</div>
+        </div>
+
+        <a href="https://wa.me/522214282564?text=Hola%20SystemPolo,%20quiero%20aprovechar%20la%20preventa%20de%20$1,500%20MXN%20para%20los%2030%20videos" 
+           target="_blank" 
+           class="w-full xs:w-auto flex-1 xs:flex-none btn-snaptube px-6 py-3 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl text-black"></i>
+            <span>PEDIR POR WHATSAPP</span>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const reelsData = [
+            // BLOQUE 1
+            { id: 1, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Fatiga Crónica', pain: 'Cansancio extremo que no quita el café', product: 'Immunocal Clásico', highlight: 'SÍ FUNCIONA', faceImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80' },
+            { id: 2, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Vitalidad +40', pain: 'Desgaste celular y falta de fuerza', product: 'Immunocal Platinum', highlight: 'RECUPERA VITALIDAD', faceImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' },
+            { id: 3, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Recuperación Deportiva', pain: 'Dolor muscular post-entrenamiento', product: 'Immunocal Sport', highlight: 'MÁS RENDIMIENTO', faceImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80' },
+            { id: 4, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Escudo Defensas', pain: 'Enfermarse en cada cambio de clima', product: 'Immunocal Clásico', highlight: 'DEFENSAS FUERTES', faceImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80' },
+            { id: 5, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Estrés Laboral', pain: 'Agotamiento físico por trabajo pesado', product: 'Immunocal Platinum', highlight: 'CERO AGOTAMIENTO', faceImg: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80' },
+            { id: 6, category: 'glutacion', block: 'Bloque 1: Glutatión & Vitalidad', title: 'Dolor Articular', pain: 'Rigidez matutina en rodillas y manos', product: 'Immunocal Platinum', highlight: 'SIN RIGIDEZ', faceImg: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80' },
+
+            // BLOQUE 2
+            { id: 7, category: 'cerebral', block: 'Bloque 2: Salud Cognitiva', title: 'Enfoque & WIMMS', pain: 'Hiperactividad y falta de atención', product: 'Cogniva / PNT200', highlight: 'CONCENTRACIÓN TOTAL', faceImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80' },
+            { id: 8, category: 'cerebral', block: 'Bloque 2: Salud Cognitiva', title: 'Niebla Mental', pain: 'Olvidos constantes y mente nublada', product: 'Cogniva', highlight: 'MENTE CLARA', faceImg: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80' },
+            { id: 9, category: 'cerebral', block: 'Bloque 2: Salud Cognitiva', title: 'Insomnio & Ansiedad', pain: 'Dificultad para dormir por mente acelerada', product: 'PNT-200', highlight: 'SUEÑO PROFUNDO', faceImg: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80' },
+            { id: 10, category: 'cerebral', block: 'Bloque 2: Salud Cognitiva', title: 'Memoria Adulto Mayor', pain: 'Pérdida paulatina de memoria', product: 'Cogniva', highlight: 'MEMORIA ÁGIL', faceImg: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80' },
+            { id: 11, category: 'cerebral', block: 'Bloque 2: Salud Cognitiva', title: 'Agotamiento Nervioso', pain: 'Episodios de estrés y sobrecarga emocional', product: 'PNT-200 / Optimizer', highlight: 'CERO ESTRÉS', faceImg: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=400&q=80' },
+
+            // BLOQUE 3
+            { id: 12, category: 'digestivo', block: 'Bloque 3: Digestivo & Microbioma', title: 'Inflamación & Colitis', pain: 'Pesadez e hinchazón al comer', product: 'Probio 3', highlight: 'ADIÓS COLITIS', faceImg: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80' },
+            { id: 13, category: 'digestivo', block: 'Bloque 3: Digestión & Microbioma', title: 'Microbiota Sana', pain: 'Daño intestinal por uso de antibióticos', product: 'Probio 3', highlight: 'PROTEGE TU INTESTINO', faceImg: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80' },
+            { id: 14, category: 'digestivo', block: 'Bloque 3: Digestión & Microbioma', title: 'Mala Absorción', pain: 'Poca energía por digestión lenta', product: 'K-21 / Probio 3', highlight: 'ABSORBE NUTRIENTES', faceImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80' },
+            { id: 15, category: 'digestivo', block: 'Bloque 3: Digestión & Microbioma', title: 'Detox Celular', pain: 'Retención de líquidos y toxinas', product: 'K-21 Herbal', highlight: 'DETOX TOTAL', faceImg: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80' },
+
+            // BLOQUE 4
+            { id: 16, category: 'rendimiento', block: 'Bloque 4: Rendimiento & Peso', title: 'Bajón de las 3 PM', pain: 'Cansancio vespertino en la oficina', product: 'Smart 30 / Optimizer', highlight: 'ENERGÍA CONSTANTE', faceImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80' },
+            { id: 17, category: 'rendimiento', block: 'Bloque 4: Rendimiento & Peso', title: 'Control de Antojos', pain: 'Ansiedad por comer azúcares', product: 'Smart 30 / Shake', highlight: 'CONTROLA EL ANTOJO', faceImg: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80' },
+            { id: 18, category: 'rendimiento', block: 'Bloque 4: Rendimiento & Peso', title: 'Fuerza Muscular', pain: 'Pérdida de músculo durante dietas', product: 'Shake / Immunocal', highlight: 'MÚSCULO FIRME', faceImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' },
+            { id: 19, category: 'rendimiento', block: 'Bloque 4: Rendimiento & Peso', title: 'Hidratación & Calambres', pain: 'Calambres musculares por sudor', product: 'MiShake / Minerales', highlight: 'CERO CALAMBRES', faceImg: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80' },
+            { id: 20, category: 'rendimiento', block: 'Bloque 4: Rendimiento & Peso', title: 'Rendimiento Gym', pain: 'Falta de potencia al entrenar', product: 'Optimizer Performance', highlight: 'MÁXIMA POTENCIA', faceImg: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80' },
+
+            // BLOQUE 5
+            { id: 21, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Picos de Glucosa', pain: 'Control deficiente de azúcar', product: 'Immunocal Platinum', highlight: 'NIVELES ESTABLES', faceImg: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80' },
+            { id: 22, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Mala Circulación', pain: 'Piernas pesadas al caminar', product: 'K-21 + Platinum', highlight: 'CIRCULACIÓN FLUIDA', faceImg: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80' },
+            { id: 23, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Alergias Estacionales', pain: 'Estornudos y defensas bajas', product: 'Immunocal Clásico', highlight: 'PROTECCIÓN TOTAL', faceImg: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80' },
+            { id: 24, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Piel Opaca', pain: 'Radicales libres dañando el rostro', product: 'Immunocal Derma', highlight: 'PIEL RADIANTE', faceImg: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80' },
+            { id: 25, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Estrés Urbano', pain: 'Contaminación y radicales libres', product: 'Optimizer Redox', highlight: 'ANTIOXIDANTE TOP', faceImg: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=400&q=80' },
+            { id: 26, category: 'estilo', block: 'Bloque 5: Estilo de Vida', title: 'Recuperación Viral', pain: 'Debilidad tras superar virus', product: 'Immunocal Duo', highlight: 'RECUPERA FUERZA', faceImg: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80' },
+
+            // BLOQUE 6
+            { id: 27, category: 'negocio', block: 'Bloque 6: Red & Negocio', title: 'Negocio en Salud', pain: 'Generar ingresos recomendando ciencia', product: 'Oportunidad Immunotec', highlight: 'INGRESOS EXTRA', faceImg: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80' },
+            { id: 28, category: 'negocio', block: 'Bloque 6: Red & Negocio', title: 'Prospección Digital', pain: 'Sin prospectos en tu red de mercadeo', product: 'SystemPolo IA', highlight: 'PROSPECTA EN AUTOMÁTICO', faceImg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80' },
+            { id: 29, category: 'negocio', block: 'Bloque 6: Red & Negocio', title: 'Tendencia Glutatión', pain: 'Mercado de mayor crecimiento', product: 'Modelo de Negocio', highlight: 'NEGOCIO RENTABLE', faceImg: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80' },
+            { id: 30, category: 'negocio', block: 'Bloque 6: Red & Negocio', title: 'Escala tu Rango', pain: 'Duplicación rápida con IA', product: 'Plan de Carrera', highlight: 'ALCANZA EL RANGO', faceImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80' }
+        ];
+
+        function renderVideoGrid(items) {
+            const container = document.getElementById('videoGrid');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `<div class="col-span-full py-12 text-center text-slate-500 font-bold">No se encontraron videos.</div>`;
+                return;
+            }
+
+            items.forEach(reel => {
+                const waMsg = encodeURIComponent(`Hola SystemPolo, quiero comprar el video #${reel.id} - ${reel.title} ($150 MXN)`);
+                const waUrl = `https://wa.me/522214282564?text=${waMsg}`;
+
+                const card = document.createElement('div');
+                card.className = 'bg-snaptube-cardBg border border-snaptube-border rounded-2xl overflow-hidden flex flex-col group relative hover:border-snaptube-yellow transition-all';
+
+                card.innerHTML = `
+                    <div class="relative w-full aspect-reel bg-black overflow-hidden">
+                        <img src="${reel.faceImg}" alt="${reel.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-75">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+                        <!-- Badge NEW Red -->
+                        <div class="absolute top-2 left-0 badge-new px-2 py-0.5 rounded-r text-[9px]">
+                            NEW
+                        </div>
+
+                        <!-- Reel Number -->
+                        <div class="absolute top-2 right-2 bg-black/80 px-2 py-0.5 rounded text-[10px] font-mono text-snaptube-yellow font-bold border border-slate-700">
+                            #${reel.id < 10 ? '0' + reel.id : reel.id}
+                        </div>
+
+                        <!-- Center Play Overlay Button -->
+                        <a href="${waUrl}" target="_blank" class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-11 h-11 rounded-full bg-snaptube-yellow text-black flex items-center justify-center text-lg font-black shadow-lg group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play ml-0.5"></i>
+                            </div>
+                        </a>
+
+                        <!-- Highlighted Thumbnail Text -->
+                        <div class="absolute bottom-10 left-2.5 right-2.5 text-left space-y-1">
+                            <div class="font-impact text-xs font-black text-white uppercase leading-tight">
+                                ${reel.title} <span class="highlight-box-red">${reel.highlight}</span>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Footer on Card -->
+                        <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-[9px] text-slate-400 font-bold">
+                            <span class="text-snaptube-yellow">SYSTEMPOLO</span>
+                            <span>0:59</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 flex-1 flex flex-col justify-between space-y-2 bg-snaptube-cardBg">
+                        <div>
+                            <div class="text-[10px] text-snaptube-yellow font-bold uppercase tracking-wider">${reel.product}</div>
+                            <p class="text-xs text-slate-300 line-clamp-2 mt-0.5 font-medium leading-snug">${reel.pain}</p>
+                        </div>
+
+                        <a href="${waUrl}" target="_blank" class="btn-snaptube w-full py-2 rounded-lg text-[10px] text-center block uppercase tracking-wider">
+                            PEDIR VIDEO ($150)
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderDirectory() {
+            const container = document.getElementById('directoryContainer');
+            container.innerHTML = '';
+
+            const blocks = {};
+            reelsData.forEach(item => {
+                if (!blocks[item.block]) blocks[item.block] = [];
+                blocks[item.block].push(item);
+            });
+
+            Object.keys(blocks).forEach(blockTitle => {
+                const card = document.createElement('div');
+                card.className = 'p-4 rounded-2xl bg-black/50 border border-slate-800 space-y-3';
+
+                let listHtml = '';
+                blocks[blockTitle].forEach(reel => {
+                    const waMsg = encodeURIComponent(`Hola SystemPolo, solicito el video #${reel.id} ${reel.title}`);
+                    listHtml += `
+                        <li class="flex items-start justify-between gap-2 text-xs py-1.5 border-b border-slate-800/80 last:border-none">
+                            <div class="space-y-0.5">
+                                <span class="font-mono text-[10px] text-snaptube-yellow font-bold">#${reel.id < 10 ? '0' + reel.id : reel.id}</span>
+                                <span class="text-slate-200 font-semibold block">${reel.title}</span>
+                                <span class="text-[10px] text-slate-400 block">${reel.product}</span>
+                            </div>
+                            <a href="https://wa.me/522214282564?text=${waMsg}" target="_blank" class="text-[10px] font-black text-black bg-snaptube-yellow px-2 py-1 rounded uppercase">
+                                $150
+                            </a>
+                        </li>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <h4 class="font-impact font-black text-xs text-snaptube-yellow tracking-wider uppercase border-b border-slate-800 pb-2">
+                        ${blockTitle}
+                    </h4>
+                    <ul class="space-y-1">${listHtml}</ul>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderVideoGrid(reelsData);
+            renderDirectory();
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-snaptube-yellow', 'text-black');
+                        b.classList.add('bg-snaptube-cardBg', 'text-slate-300');
+                    });
+
+                    btn.classList.add('active', 'bg-snaptube-yellow', 'text-black');
+                    btn.classList.remove('bg-snaptube-cardBg', 'text-slate-300');
+
+                    const category = btn.getAttribute('data-category');
+                    if (category === 'all') {
+                        renderVideoGrid(reelsData);
+                    } else {
+                        renderVideoGrid(reelsData.filter(item => item.category === category));
+                    }
+                });
+            });
+
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                renderVideoGrid(reelsData.filter(item => 
+                    item.title.toLowerCase().includes(query) ||
+                    item.pain.toLowerCase().includes(query) ||
+                    item.product.toLowerCase().includes(query)
+                ));
+            });
+        });
+    </script>
+</body>
+</html>
